@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Vance</string>
+<string name="vance_subtitle">Bộ công cụ Android theo kiến trúc module</string>
+<string name="vance_footer">Một trung tâm điều khiển · Các module độc lập</string>
+<string name="module_not_ready">Module này sẽ được kết nối trong bản cập nhật sau.</string>
+<string name="more_modules">Module khác</string>
+<string name="more_modules_hint">Các module mới sẽ xuất hiện tại đây khi được bổ sung.</string>
+<string name="module_refurbish">Tân trang</string><string name="module_refurbish_desc">Chọn nguồn APK và cấu hình kiểu hiển thị</string>
+<string name="module_explorer">Explorer</string><string name="module_explorer_desc">Khám phá tệp gói và dữ liệu ứng dụng</string>
+<string name="module_monitor">Monitor</string><string name="module_monitor_desc">Theo dõi hoạt động được chọn</string>
+<string name="module_inspect">Inspect Layout</string><string name="module_inspect_desc">Kiểm tra cấu trúc giao diện</string>
+<string name="module_agent">Scan Agent</string><string name="module_agent_desc">Yêu cầu agent quét trong process base</string>
+<string name="module_more">More</string><string name="module_more_desc">Các module bổ sung</string>
+<string name="subtitle">Bộ công cụ APK · Biểu tượng · Chữ ký</string>
+<string name="tab_home">Vance</string><string name="tab_sources">Nguồn</string><string name="tab_styles">Tân trang</string><string name="tab_sign">Ký APK</string><string name="tab_output">Xuất/Cài</string>
+<string name="source_title">01 · Chọn gói APK</string>
+<string name="source_hint">Nhập từ bộ nhớ, ứng dụng đã cài hoặc tải từ web.</string>
+<string name="import_package">Nhập APK / APKS / XAPK / APKM</string>
+<string name="installed_package">Duyệt ứng dụng đã cài</string>
+<string name="web_download">Tải từ web · APKMirror / APKPure</string>
+<string name="export_original">Xuất gói cài đặt nguyên bản</string>
+<string name="no_package">Chưa chọn ứng dụng</string>
+<string name="saved_style_hint">Tên và ảnh đã lưu sẽ tự phục hồi theo package name.</string>
+<string name="style_title">02 · Module tân trang · Tên và biểu tượng</string>
+<string name="style_hint">Mặc định có 3 ô, có thể để trống ô chưa dùng hoặc thêm nhiều giao diện tùy thích.</string>
+<string name="style_number">Kiểu %1$d</string>
+<string name="launcher_name">Tên launcher %1$d</string>
+<string name="choose_icon">Chọn ảnh PNG / JPEG %1$d</string>
+<string name="no_image">Chưa chọn ảnh</string>
+<string name="background_white">Nền trắng</string>
+<string name="background_transparent">Nền trong suốt</string>
+<string name="save_style">Lưu cấu hình cho ứng dụng này</string>
+<string name="forget_style">Xóa cấu hình đã lưu</string>
+<string name="sign_title">03 · Khóa ký ứng dụng</string>
+<string name="sign_hint">Một chứng chỉ chung cho APK base và toàn bộ split.</string>
+<string name="create_portable">Tạo khóa ký P12 có thể sao lưu</string>
+<string name="backup_portable">Sao lưu khóa P12</string>
+<string name="restore_portable">Khôi phục bản sao lưu P12</string>
+<string name="remove_portable">Xóa khóa P12 khỏi thiết bị này</string>
+<string name="verify_certificate">Kiểm tra chứng chỉ và khả năng cập nhật</string>
+<string name="certificate_hint">Kiểm tra chứng chỉ trước khi patch; các split phải dùng chung một khóa.</string>
+<string name="output_title">04 · Tạo gói, xuất và cài</string>
+<string name="output_hint">Giữ package name. Cài đè cần chứng chỉ khớp với ứng dụng đã cài.</string>
+<string name="patch_package">Tạo và ký gói APK</string>
+<string name="patch_single">Tạo APK đơn (gộp split)</string>
+<string name="save_result">Lưu gói APK đã tạo</string>
+<string name="install_file">Cài gói APK từ bộ nhớ</string>
+<string name="install_result">Cài gói vừa xuất</string>
+<string name="status_idle">Sẵn sàng · versionCode vẫn là 3.</string>
+<string name="settings">Cài đặt</string>
+<string name="settings_title">Tùy chỉnh giao diện</string>
+<string name="language">Ngôn ngữ</string>
+<string name="theme">Giao diện</string>
+<string name="language_auto">Theo hệ thống</string>
+<string name="language_en">English</string>
+<string name="language_vi">Tiếng Việt</string>
+<string name="theme_auto">Theo hệ thống</string>
+<string name="theme_light">Sáng</string>
+<string name="theme_dark">Tối</string>
+<string name="apply_next_launch">Thiết lập có hiệu lực khi mở lại Vance.</string>
+<string name="done">Xong</string>
+<string name="processing">Đang xử lý gói APK…</string>
+<string name="ready">Sẵn sàng</string>
+<string name="sign_mode_default">Mặc định · GiaoKhoa</string>
+<string name="sign_mode_device">Private · khóa trên máy</string>
+<string name="sign_mode_custom">Custom · JKS / P12 / PFX</string>
+<string name="sign_mode_portable">Portable P12 · có sao lưu</string>
+<string name="signing_identity">Chứng chỉ ký ứng dụng</string>
+<string name="select_custom_key">Chọn keystore JKS / P12 / PFX</string>
+<string name="key_alias">Alias của khóa</string>
+<string name="store_password">Mật khẩu kho khóa (không lưu)</string>
+<string name="key_password">Mật khẩu key (trống = như kho khóa)</string>
+<string name="portable_password">Mật khẩu Portable P12 (không lưu)</string>
+<string name="custom_key_missing">Chưa chọn keystore</string>
+<string name="key_desc_default">Sử dụng chứng chỉ thử nghiệm GiaoKhoa.</string>
+<string name="key_desc_device">Khóa gắn với thiết bị. Gỡ ứng dụng có thể mất khóa vĩnh viễn.</string>
+<string name="key_desc_custom">Chọn keystore; mật khẩu không được lưu.</string>
+<string name="key_desc_portable">Portable P12: hãy sao lưu khóa và mật khẩu trước khi đổi thiết bị.</string>
+<string name="browser_go">Đi</string><string name="browser_back">Quay lại</string><string name="browser_close">Đóng</string>
+<string name="browser_hint">Truy cập nguồn đáng tin cậy để tải APK/APKS/XAPK/APKM.</string>
+<string name="browser_address">Nhập địa chỉ website</string>
+<string name="installed_title">Ứng dụng đã cài</string>
+<string name="installed_search">Tìm tên ứng dụng hoặc package</string>
+<string name="installed_system">Hiện cả ứng dụng hệ thống</string>
+<string name="cancel">Hủy</string>
+
+<string name="status_saved_style">Đã lưu cấu hình cho %1$s.</string>
+<string name="status_input_reading">Đang đọc và kiểm tra các APK thành phần…</string>
+<string name="status_input_ready">Gói đã sẵn sàng: %1$s · mọi APK thành phần dùng chung chứng chỉ.</string>
+<string name="status_source_name">Nguồn: %1$s</string>
+<string name="status_inspecting">Đang kiểm tra %1$s…</string>
+<string name="status_import_failed">Không thể nhập gói APK</string>
+<string name="status_error">Lỗi: %1$s</string>
+<string name="status_sign_prompt">Kiểm tra chứng chỉ đã chọn với ứng dụng đang cài.</string>
+<string name="status_new_package">Ứng dụng mới: nhập ít nhất một bộ tên và ảnh, hoặc thêm giao diện.</string>
+<string name="status_restored">Đã phục hồi cấu hình đã lưu.</string>
+<string name="status_missing_images">Đã phục hồi tên; cần chọn lại %1$d ảnh.</string>
+<string name="status_forgot">Đã xóa cấu hình của %1$s.</string>
+<string name="status_forgot_hint">Bạn có thể nhập cấu hình mới.</string>
+<string name="status_need_package">Hãy nhập APK hoặc chọn ứng dụng đã cài trước.</string>
+<string name="status_need_styles">Hãy nhập ít nhất một bộ tên và ảnh đầy đủ.</string>
+<string name="status_patching">Đang tạo và ký gói APK…</string>
+<string name="status_signed">Đã ký %1$d APK thành phần. Sẵn sàng lưu %2$s.</string>
+<string name="status_saving">Đã lưu gói: %1$s. Sẵn sàng cài đặt.</string>
+<string name="status_installing">Đang chuẩn bị bộ APK cho trình cài Android…</string>
+<string name="status_install_submitted">Đã gửi %1$d APK thành phần tới Android. Hãy xác nhận cài đặt.</string>
+<string name="status_select_install">Hãy chọn gói APK cần cài.</string>
+<string name="status_key_checking">Đang kiểm tra chứng chỉ ký…</string>
+<string name="status_key_missing">Hãy tạo hoặc nhập khóa Portable P12 trước.</string>
+<string name="status_backup_saved">Đã sao lưu P12. Hãy giữ an toàn file và mật khẩu.</string>
+<string name="status_key_removed">Đã xóa khóa Portable khỏi thiết bị.</string>
+<string name="status_no_signed_package">Chưa có gói đã ký để lưu.</string>
+<string name="status_failed">Thao tác thất bại: %1$s</string>
+<string name="status_incomplete_style">Kiểu %1$d: phải nhập đủ tên và ảnh, hoặc để trống cả hai.</string>
+<string name="add_more_style">＋ Thêm giao diện</string>
+<string name="remove_style">Xóa</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Vance</string>
+<string name="vance_subtitle">A modular toolkit for Android packages</string>
+<string name="vance_footer">One control center · Independent modules</string>
+<string name="module_not_ready">This module is reserved for a future update.</string>
+<string name="more_modules">More modules</string>
+<string name="more_modules_hint">New modules will appear here as they are added.</string>
+<string name="module_refurbish">Refurbish</string><string name="module_refurbish_desc">Choose APK sources and configure display styles</string>
+<string name="module_explorer">Explorer</string><string name="module_explorer_desc">Explore package files and application data</string>
+<string name="module_monitor">Monitor</string><string name="module_monitor_desc">Observe selected application activity</string>
+<string name="module_inspect">Inspect Layout</string><string name="module_inspect_desc">Inspect interface structure</string>
+<string name="module_agent">Scan Agent</string><string name="module_agent_desc">Request a scan from the base process</string>
+<string name="module_more">More</string><string name="module_more_desc">Additional modules</string>
+<string name="subtitle">APK toolkit · Launcher display · Signing</string>
+<string name="tab_home">Vance</string><string name="tab_sources">Sources</string><string name="tab_styles">Refurbish</string><string name="tab_sign">Signing</string><string name="tab_output">Output</string>
+<string name="source_title">01 · Choose an APK package</string>
+<string name="source_hint">Import a local file, installed app, or download from the web.</string>
+<string name="import_package">Import APK / APKS / XAPK / APKM</string>
+<string name="installed_package">Browse installed apps</string>
+<string name="web_download">Web download · APKMirror / APKPure</string>
+<string name="export_original">Export installed original package</string>
+<string name="no_package">No package selected yet</string>
+<string name="saved_style_hint">Saved icon and name preferences are restored by package name.</string>
+<string name="style_title">02 · Refurbish · Launcher names &amp; icons</string>
+<string name="style_hint">Three rows are shown by default. Leave unused rows empty or add more styles.</string>
+<string name="style_number">Style %1$d</string>
+<string name="launcher_name">Launcher name %1$d</string>
+<string name="choose_icon">Choose PNG / JPEG %1$d</string>
+<string name="no_image">No image selected</string>
+<string name="background_white">White icon background</string>
+<string name="background_transparent">Transparent icon background</string>
+<string name="save_style">Save preferences for this package</string>
+<string name="forget_style">Forget saved preferences</string>
+<string name="sign_title">03 · Signing identity</string>
+<string name="sign_hint">Choose one certificate for the base APK and every split.</string>
+<string name="create_portable">Generate portable P12 signing key</string>
+<string name="backup_portable">Back up portable P12</string>
+<string name="restore_portable">Restore portable P12 backup</string>
+<string name="remove_portable">Remove portable key from this device</string>
+<string name="verify_certificate">Check signing certificate &amp; compatibility</string>
+<string name="certificate_hint">Check the certificate before patching; all APK modules must use the same key.</string>
+<string name="output_title">04 · Build, save &amp; install</string>
+<string name="output_hint">Signed outputs retain their package name. Installing over an original requires a matching certificate.</string>
+<string name="patch_package">Build and sign APK package</string>
+<string name="patch_single">Build standalone APK (merge split modules)</string>
+<string name="save_result">Save last generated package</string>
+<string name="install_file">Install a package from storage</string>
+<string name="install_result">Install last exported package</string>
+<string name="status_idle">Ready · Refurbished version code stays 3.</string>
+<string name="settings">Settings</string>
+<string name="settings_title">Interface preferences</string>
+<string name="language">Language</string>
+<string name="theme">Appearance</string>
+<string name="language_auto">System language</string>
+<string name="language_en">English</string>
+<string name="language_vi">Tiếng Việt</string>
+<string name="theme_auto">System theme</string>
+<string name="theme_light">Light</string>
+<string name="theme_dark">Dark</string>
+<string name="apply_next_launch">Changes take effect when Vance is opened again.</string>
+<string name="done">Done</string>
+<string name="processing">Processing package…</string>
+<string name="ready">Ready</string>
+<string name="sign_mode_default">Default · GiaoKhoa</string>
+<string name="sign_mode_device">Private · device keystore</string>
+<string name="sign_mode_custom">Custom · JKS / P12 / PFX</string>
+<string name="sign_mode_portable">Portable P12 · backup enabled</string>
+<string name="signing_identity">Signing identity for this package</string>
+<string name="select_custom_key">Choose JKS / P12 / PFX keystore</string>
+<string name="key_alias">Keystore key alias</string>
+<string name="store_password">Store password (not saved)</string>
+<string name="key_password">Key password (blank = store password)</string>
+<string name="portable_password">Portable P12 password (not saved)</string>
+<string name="custom_key_missing">No custom keystore chosen</string>
+<string name="key_desc_default">Uses the GiaoKhoa test signing certificate.</string>
+<string name="key_desc_device">Device-bound signing key. Uninstalling may permanently remove it.</string>
+<string name="key_desc_custom">Choose a keystore; passwords are never saved.</string>
+<string name="key_desc_portable">Portable P12: save a backup and its password before upgrading devices.</string>
+<string name="browser_go">Go</string><string name="browser_back">Back</string><string name="browser_close">Close</string>
+<string name="browser_hint">Browse a trusted source to download APK/APKS/XAPK/APKM.</string>
+<string name="browser_address">Type a website address</string>
+<string name="installed_title">Installed apps</string>
+<string name="installed_search">Search app name or package</string>
+<string name="installed_system">Include system apps</string>
+<string name="cancel">Cancel</string>
+
+<string name="status_saved_style">Saved styles for %1$s.</string>
+<string name="status_input_reading">Reading and checking all APK modules…</string>
+<string name="status_input_ready">Package ready: %1$s · signing uses one certificate for every APK module.</string>
+<string name="status_source_name">Source: %1$s</string>
+<string name="status_inspecting">Inspecting %1$s…</string>
+<string name="status_import_failed">Unable to import package</string>
+<string name="status_error">Error: %1$s</string>
+<string name="status_sign_prompt">Check the selected signing certificate against any installed copy.</string>
+<string name="status_new_package">New package: enter one or more name/icon pairs, or add styles.</string>
+<string name="status_restored">Saved styles restored.</string>
+<string name="status_missing_images">Names restored; %1$d image(s) need reselection.</string>
+<string name="status_forgot">Saved styles removed for %1$s.</string>
+<string name="status_forgot_hint">You can now enter new styles.</string>
+<string name="status_need_package">Import a package or choose an installed app first.</string>
+<string name="status_need_styles">Enter at least one complete name and icon pair.</string>
+<string name="status_patching">Building and signing package…</string>
+<string name="status_signed">Signed %1$d APK module(s). Ready to save %2$s.</string>
+<string name="status_saving">Saved package: %1$s. Ready to install.</string>
+<string name="status_installing">Preparing all APK modules for Android installer…</string>
+<string name="status_install_submitted">Sent %1$d APK module(s) to Android installer. Confirm installation.</string>
+<string name="status_select_install">Choose a package to install.</string>
+<string name="status_key_checking">Checking signing certificate…</string>
+<string name="status_key_missing">Create or import a portable P12 key first.</string>
+<string name="status_backup_saved">Portable P12 backed up. Keep the file and password safe.</string>
+<string name="status_key_removed">Portable key removed from this device.</string>
+<string name="status_no_signed_package">No signed output is available yet.</string>
+<string name="status_failed">Operation failed: %1$s</string>
+<string name="status_incomplete_style">Style %1$d needs both a name and icon, or leave both empty.</string>
+<string name="add_more_style">＋ Add more style</string>
+<string name="remove_style">Remove</string>
+</resources>

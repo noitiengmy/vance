@@ -1,0 +1,66 @@
+plugins { id 'com.android.application' }
+android {
+    namespace 'com.maico.refurbished'
+    compileSdk 35
+    signingConfigs {
+        giaokhoa {
+            storeFile file('src/main/assets/default.p12')
+            storeType 'pkcs12'
+            keyAlias 'alias'
+            // Public test identity supplied with GiaoKhoa; not for production use.
+            storePassword 'xrj45yWGLbsO7W0v'
+            keyPassword 'xrj45yWGLbsO7W0v'
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.giaokhoa
+        }
+    }
+    defaultConfig {
+        applicationId 'com.maico.vance'
+        minSdk 26
+        targetSdk 28
+        versionCode 3
+        versionName '0.2-icon-normalizer'
+    }
+    packaging {
+        resources {
+            excludes += ['META-INF/versions/9/OSGI-INF/MANIFEST.MF']
+        }
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+    sourceSets { main { assets.srcDir file('build/generated/vance-assets') } }
+}
+dependencies {
+    implementation project(':patcher')
+    implementation 'org.bouncycastle:bcprov-jdk18on:1.78.1'
+    implementation 'org.bouncycastle:bcpkix-jdk18on:1.78.1'
+}
+def generatedAssets = file('build/generated/vance-assets')
+tasks.register('generateVanceCoreDex') {
+    dependsOn ':inject:compileDebugJavaWithJavac'
+    outputs.file(file('build/generated/vance-assets/vance_core.dex'))
+    inputs.dir(file('../inject/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes'))
+    doLast {
+        generatedAssets.mkdirs()
+        def classesDir = file('../inject/build/intermediates/javac/debug/compileDebugJavaWithJavac/classes')
+        def classFiles = fileTree(classesDir) { include '**/*.class' }.files.sort { it.absolutePath }
+        if (classFiles.isEmpty()) throw new GradleException('Inject Java classes missing: ' + classesDir)
+        def temp = file('build/generated/d8-out')
+        temp.deleteDir()
+        temp.mkdirs()
+        def sdk = android.sdkDirectory
+        def d8 = new File(sdk, 'build-tools/35.0.0/d8' + (System.getProperty('os.name').toLowerCase().contains('windows') ? '.bat' : ''))
+        def androidJar = new File(sdk, 'platforms/android-35/android.jar')
+        if (!d8.isFile()) throw new GradleException('Android SDK build-tools 35.0.0 required')
+        project.exec {
+            commandLine([d8.absolutePath, '--min-api', '26', '--lib', androidJar.absolutePath,
+                    '--output', temp.absolutePath] + classFiles.collect { it.absolutePath })
+        }
+        def dex = file('build/generated/d8-out/classes.dex')
+        if (!dex.isFile()) throw new GradleException('D8 did not generate classes.dex')
+        copy { from dex; into generatedAssets; rename { 'vance_core.dex' } }
+    }
+}
+tasks.configureEach { if (name == 'mergeDebugAssets') dependsOn 'generateVanceCoreDex' }

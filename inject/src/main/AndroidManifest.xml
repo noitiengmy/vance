@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+ <application>
+  <activity android:name="ipa.maico.vance.VanceActivity" android:exported="true" android:process=":vance" android:taskAffinity=""/>
+  <activity android:name="ipa.maico.furbish.ChangeDisplayActivity" android:exported="true" android:process=":vance" android:taskAffinity=""/>
+  <receiver android:name="ipa.maico.furbish.AliasRefreshReceiver" android:exported="false"/>
+ </application>
+</manifest>

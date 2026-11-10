@@ -1,0 +1,11 @@
+plugins { id 'com.android.library' }
+android {
+    namespace 'com.maico.refurbished.patcher'
+    compileSdk 35
+    defaultConfig { minSdk 26 }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+}
+dependencies {
+    api 'io.github.reandroid:ARSCLib:1.4.0'
+    implementation 'com.android.tools.build:apksig:8.7.3'
+}
